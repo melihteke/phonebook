@@ -22,6 +22,20 @@ Inserted some initial documents
 <img width="1302" alt="image" src="https://user-images.githubusercontent.com/36086368/231450891-d5392ab1-5c38-4d17-b682-0f51f39cde99.png">
 
 
+## Step-4:
+
+# add Method()
+
+```sh
+In [16]: new_record={'name': 'Utku Haydaroglu','phone': '6666-94134', 'email': 'utku@gmail.com', 'address': 'there, Tu
+    ...: rkiye'}
+
+In [17]: phonebook.add_record(new_record)
+
+In [18]: 
+```
+
+
 ```sh
 In [15]: phonebook.view_all_records()
 Out[15]: 

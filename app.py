@@ -29,7 +29,7 @@ class Phonebook:
         return [record for record in self.collection.find(filters)]
 
 phonebook = Phonebook(
-    uri="mongodb+srv://{DBA_USR}:{DBA_PSSWD}@{DBA_URL}",
+    uri=f"mongodb+srv://{DBA_USR}:{DBA_PSSWD}@{DBA_URL}",
     db_name="test",
     collection_name="phonebook"
 )

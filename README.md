@@ -55,3 +55,7 @@ Out[15]:
   'email': 'utku@gmail.com',
   'address': 'there, Turkiye'}]
 ```
+
+## GUI view
+<img width="1348" alt="image" src="https://user-images.githubusercontent.com/36086368/231453668-07534012-001a-437d-8a9f-50ec59462eae.png">
+

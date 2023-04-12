@@ -193,5 +193,4 @@ Out[28]:
 
 #### Gui view:
 
-<img width="1352" alt="image" src="https://user-images.githubusercontent.com/36086368/231460168-1b1e4a8e-a0b1-41d4-8881-789d853bc362.png">
-
+<img width="1325" alt="image" src="https://user-images.githubusercontent.com/36086368/231465076-fa111dfc-5ef3-4f6d-95c2-552716c93e33.png">

@@ -3,8 +3,7 @@ from bson.objectid import ObjectId
 import environment
 import urllib.parse
 
-DBA_USR = environment.DBA_USR
-DBA_PSSWD = environment.DBA_PSSWD
+
 DBA_URI = environment.DBA_URI
 
 class Phonebook:

@@ -44,6 +44,9 @@ In [21]: phonebook.add_record(new_record_3)
 
 
 ```sh
+
+#### view_all_records method:
+
 In [15]: phonebook.view_all_records()
 Out[15]: 
 [{'_id': ObjectId('64368cf4da9a26534d27f6a9'),
@@ -142,4 +145,44 @@ Out[25]:
 
 In [26]: 
 ```
+
+### Step-7:
+
+#### remove_record() method:
+```sh
+In [26]: phonebook.remove_record('6436901b9f17289deb29a7e8')
+
+In [28]: phonebook.view_all_records()
+Out[28]: 
+[{'_id': ObjectId('64368cf4da9a26534d27f6a9'),
+  'name': 'John Doe',
+  'phone': '555-1234',
+  'email': 'johndoe@example.com',
+  'address': '123 Main St, Anytown, USA'},
+ {'_id': ObjectId('64368d30da9a26534d27f6ab'),
+  'name': 'Jane Smith',
+  'phone': '555-5678',
+  'email': 'janesmith@example.com',
+  'address': '456 Elm St, Anytown, USA'},
+ {'_id': ObjectId('64368d44da9a26534d27f6ac'),
+  'name': 'Bob Johnson',
+  'phone': '555-9012',
+  'email': 'bobjohnson@example.com',
+  'address': '789 Oak St, Anytown, USA'},
+ {'_id': ObjectId('64368d90da9a26534d27f6ad'),
+  'name': 'Melih Teke',
+  'phone': '6666-94134',
+  'email': 'melihteke@melihteke.com',
+  'address': 'Somewhere, Turkiye'},
+ {'_id': ObjectId('643697ad44336b29c882e31e'),
+  'name': 'Utku Haydaroglu',
+  'phone': '6666-94134',
+  'email': 'utku@gmail.com',
+  'address': 'there, Turkiye'}]
+
+
+
+#### Gui view:
+
+<img width="1352" alt="image" src="https://user-images.githubusercontent.com/36086368/231460168-1b1e4a8e-a0b1-41d4-8881-789d853bc362.png">
 

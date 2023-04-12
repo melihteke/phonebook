@@ -24,7 +24,7 @@ Inserted some initial documents
 
 ## Step-4:
 
-# add Method()
+
 
 ```sh
 In [16]: new_record={'name': 'Utku Haydaroglu','phone': '6666-94134', 'email': 'utku@gmail.com', 'address': 'there, Tu

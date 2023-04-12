@@ -1,7 +1,7 @@
 from pymongo import MongoClient
 from bson.objectid import ObjectId
 import environment
-
+import urllib.parse
 
 DBA_USR = environment.DBA_USR
 DBA_PSSWD = environment.DBA_PSSWD
@@ -29,7 +29,7 @@ class Phonebook:
         return [record for record in self.collection.find(filters)]
 
 phonebook = Phonebook(
-    uri=f"mongodb+srv://{DBA_USR}:{DBA_PSSWD}@{DBA_URL}",
+    uri=f"mongodb+srv://{urllib.parse.quote_plus(DBA_USR)}:{urllib.parse.quote_plus(DBA_PSSWD)}@{DBA_URL}",
     db_name="test",
     collection_name="phonebook"
 )

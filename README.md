@@ -94,3 +94,52 @@ Out[21]:
   'email': 'haydar@gmail.com'}]
 ```
 
+### Step-6:
+
+#### update_record() method:
+
+```sh
+In [23]: updated_record = {'name': 'Haydar Haydaroglu',
+    ...:   'phone_number': '555-313131',
+    ...:   'email': 'haydar2@gmail.com',
+    ...:   'country':'NO_COUNTRY'}
+
+In [24]: phonebook.update_record('6436901b9f17289deb29a7e8', updated_record)
+
+In [25]: phonebook.view_all_records()
+Out[25]: 
+[{'_id': ObjectId('64368cf4da9a26534d27f6a9'),
+  'name': 'John Doe',
+  'phone': '555-1234',
+  'email': 'johndoe@example.com',
+  'address': '123 Main St, Anytown, USA'},
+ {'_id': ObjectId('64368d30da9a26534d27f6ab'),
+  'name': 'Jane Smith',
+  'phone': '555-5678',
+  'email': 'janesmith@example.com',
+  'address': '456 Elm St, Anytown, USA'},
+ {'_id': ObjectId('64368d44da9a26534d27f6ac'),
+  'name': 'Bob Johnson',
+  'phone': '555-9012',
+  'email': 'bobjohnson@example.com',
+  'address': '789 Oak St, Anytown, USA'},
+ {'_id': ObjectId('64368d90da9a26534d27f6ad'),
+  'name': 'Melih Teke',
+  'phone': '6666-94134',
+  'email': 'melihteke@melihteke.com',
+  'address': 'Somewhere, Turkiye'},
+ {'_id': ObjectId('6436901b9f17289deb29a7e8'),
+  'name': 'Haydar Haydaroglu',
+  'phone_number': '555-313131',
+  'email': 'haydar2@gmail.com',
+  'country': 'NO_COUNTRY'},
+ {'_id': ObjectId('643697ad44336b29c882e31e'),
+  'name': 'Utku Haydaroglu',
+  'phone': '6666-94134',
+  'email': 'utku@gmail.com',
+  'address': 'there, Turkiye'},
+]
+
+In [26]: 
+```
+

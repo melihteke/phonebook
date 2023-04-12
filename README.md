@@ -28,11 +28,18 @@ Inserted some initial documents
 #### add_record() method
 
 ```sh
-In [16]: new_record={'name': 'Utku Haydaroglu','phone': '6666-94134', 'email': 'utku@gmail.com', 'address': 'there, Turkiye'}
+In [16]: new_record_1={'name': 'Utku Haydaroglu','phone': '6666-94134', 'email': 'utku@gmail.com', 'address': 'there, Turkiye'}
 
-In [17]: phonebook.add_record(new_record)
+In [17]: phonebook.add_record(new_record_1)
 
-In [18]: 
+In [18]: new_record_2={'name': 'Melih Teke','phone': '6666-94134', 'email': 'melihteke@melihteke.com', 'address': 'Somewhere, Turkiye'}
+
+In [19]: phonebook.add_record(new_record_2)
+
+In [20]: new_record_3={'name': 'Haydar Haydaroglu','phone': '555-313131', 'email': 'haydar@gmail.com'}
+
+In [21]: phonebook.add_record(new_record_3)
+
 ```
 
 

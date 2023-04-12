@@ -1,6 +1,15 @@
 ## Creating a Phonebook with MongoDB
 
-The idea of this repo to show how we can build our phonebook over mongodb. In order to start this application you need to have a accessible MongoDB somewhere. In my example I have created my FreeTier MongoDB on https://cloud.mongodb.com/.
+Welcome to the phonebook application readme! This application is designed to showcase how you can easily build your own phonebook using MongoDB with Python. The purpose of this document is to guide you through the setup process so that you can quickly get started with using the application.
+
+Before we begin, please ensure that you have access to a MongoDB instance. In this example, I have used the FreeTier option available on https://cloud.mongodb.com/. However, you can use any MongoDB instance that is accessible to you.
+
+To get started, follow these steps:
+
+Clone the repository to your local machine
+Install the required dependencies by running pip install -r requirements.txt
+Set up a .env file with the necessary environment variables for connecting to your MongoDB instance (e.g. MONGODB_URI, PORT, etc.)
+Start the application by running python app.py
 
 
 ### Step-1:

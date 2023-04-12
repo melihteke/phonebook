@@ -12,6 +12,57 @@ Set up a .env file with the necessary environment variables for connecting to yo
 Start the application by running python app.py
 
 
+## How to Run the app
+
+```sh
+git clone https://github.com/melihteke/phonebook.git
+
+python3 -m venv .venv
+
+pip install --upgrade pip
+
+pip install -r requirements.txt
+
+source .venv/bin/activate
+
+(.venv) MTeke1@APKM2W42362BA4 phonebook % python app.py
+Options:
+1. View all records
+2. View specific record
+3. Add record
+4. Delete record
+5. Update record
+Q. Quit
+Enter an option: 1
+{'_id': ObjectId('64368cf4da9a26534d27f6a9'), 'name': 'John Doe', 'phone': '555-1234', 'email': 'johndoe@example.com', 'address': '123 Main St, Anytown, USA'}
+{'_id': ObjectId('64368d30da9a26534d27f6ab'), 'name': 'Jane Smith', 'phone': '555-5678', 'email': 'janesmith@example.com', 'address': '456 Elm St, Anytown, USA'}
+{'_id': ObjectId('64368d44da9a26534d27f6ac'), 'name': 'Bob Johnson', 'phone': '555-9012', 'email': 'bobjohnson@example.com', 'address': '789 Oak St, Anytown, USA'}
+{'_id': ObjectId('64368d90da9a26534d27f6ad'), 'name': 'Melih Teke', 'phone': '6666-94134', 'email': 'melihteke@melihteke.com', 'address': 'Somewhere, Turkiye'}
+{'_id': ObjectId('643697ad44336b29c882e31e'), 'name': 'Utku Haydaroglu', 'phone': '6666-94134', 'email': 'utku@gmail.com', 'address': 'there, Turkiye'}
+Options:
+1. View all records
+2. View specific record
+3. Add record
+4. Delete record
+5. Update record
+Q. Quit
+Enter an option: 2
+Enter name of record to view: Melih Teke
+{'_id': ObjectId('64368d90da9a26534d27f6ad'), 'name': 'Melih Teke', 'phone': '6666-94134', 'email': 'melihteke@melihteke.com', 'address': 'Somewhere, Turkiye'}
+Options:
+1. View all records
+2. View specific record
+3. Add record
+4. Delete record
+5. Update record
+Q. Quit
+Enter an option: Q
+Exiting program...
+```
+
+
+## More Details about the class methods and the No-SQL DB
+
 ### Step-1:
 Cluster0 is created on cloud.mongodb
 
@@ -199,41 +250,3 @@ Out[28]:
 
 
 
-## How to Run the app
-
-```sh
-(.venv) MTeke1@APKM2W42362BA4 phonebook % python app.py
-Options:
-1. View all records
-2. View specific record
-3. Add record
-4. Delete record
-5. Update record
-Q. Quit
-Enter an option: 1
-{'_id': ObjectId('64368cf4da9a26534d27f6a9'), 'name': 'John Doe', 'phone': '555-1234', 'email': 'johndoe@example.com', 'address': '123 Main St, Anytown, USA'}
-{'_id': ObjectId('64368d30da9a26534d27f6ab'), 'name': 'Jane Smith', 'phone': '555-5678', 'email': 'janesmith@example.com', 'address': '456 Elm St, Anytown, USA'}
-{'_id': ObjectId('64368d44da9a26534d27f6ac'), 'name': 'Bob Johnson', 'phone': '555-9012', 'email': 'bobjohnson@example.com', 'address': '789 Oak St, Anytown, USA'}
-{'_id': ObjectId('64368d90da9a26534d27f6ad'), 'name': 'Melih Teke', 'phone': '6666-94134', 'email': 'melihteke@melihteke.com', 'address': 'Somewhere, Turkiye'}
-{'_id': ObjectId('643697ad44336b29c882e31e'), 'name': 'Utku Haydaroglu', 'phone': '6666-94134', 'email': 'utku@gmail.com', 'address': 'there, Turkiye'}
-Options:
-1. View all records
-2. View specific record
-3. Add record
-4. Delete record
-5. Update record
-Q. Quit
-Enter an option: 2
-Enter name of record to view: Melih Teke
-{'_id': ObjectId('64368d90da9a26534d27f6ad'), 'name': 'Melih Teke', 'phone': '6666-94134', 'email': 'melihteke@melihteke.com', 'address': 'Somewhere, Turkiye'}
-Options:
-1. View all records
-2. View specific record
-3. Add record
-4. Delete record
-5. Update record
-Q. Quit
-Enter an option: Q
-Exiting program...
-(.venv) MTeke1@APKM2W42362BA4 phonebook % 
-```

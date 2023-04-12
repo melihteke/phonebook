@@ -8,7 +8,7 @@ To get started, follow these steps:
 
 Clone the repository to your local machine
 Install the required dependencies by running pip install -r requirements.txt
-Set up a .env file with the necessary environment variables for connecting to your MongoDB instance (e.g. MONGODB_URI, PORT, etc.)
+Set up a .env file with the necessary environment variables for connecting to your MongoDB instance (e.g. DBA_USR, DBA_PSSWD, DBA_URL)
 Start the application by running python app.py
 
 

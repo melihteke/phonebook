@@ -5,7 +5,7 @@ import urllib.parse
 
 DBA_USR = environment.DBA_USR
 DBA_PSSWD = environment.DBA_PSSWD
-DBA_URL = environment.DBA_URL
+DBA_URI = environment.DBA_URI
 
 class Phonebook:
     def __init__(self, uri, db_name, collection_name):
@@ -29,7 +29,7 @@ class Phonebook:
         return [record for record in self.collection.find(filters)]
 
 phonebook = Phonebook(
-    uri=f'mongodb+srv://{DBA_USR}:{DBA_PSSWD}@{DBA_URL}',
+    uri=DBA_URI,
     db_name="test",
     collection_name="phonebook"
 )

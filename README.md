@@ -77,6 +77,20 @@ Out[15]:
   'address': 'there, Turkiye'}]
 ```
 
-## GUI view
+#### GUI view
 <img width="1348" alt="image" src="https://user-images.githubusercontent.com/36086368/231453668-07534012-001a-437d-8a9f-50ec59462eae.png">
+
+
+### Step-5:
+
+#### view_specific_record() method
+
+```sh
+In [21]: phonebook.view_specific_record({'name':'Haydar Haydaroglu'})
+Out[21]: 
+[{'_id': ObjectId('6436901b9f17289deb29a7e8'),
+  'name': 'Haydar Haydaroglu',
+  'phone_number': '555-313131',
+  'email': 'haydar@gmail.com'}]
+```
 

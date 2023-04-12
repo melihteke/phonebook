@@ -188,7 +188,7 @@ Out[28]:
   'phone': '6666-94134',
   'email': 'utku@gmail.com',
   'address': 'there, Turkiye'}]
-
+```
 
 
 #### Gui view:

@@ -194,3 +194,46 @@ Out[28]:
 #### Gui view:
 
 <img width="1325" alt="image" src="https://user-images.githubusercontent.com/36086368/231465076-fa111dfc-5ef3-4f6d-95c2-552716c93e33.png">
+
+
+
+
+
+## How to Run the app
+
+```sh
+(.venv) MTeke1@APKM2W42362BA4 phonebook % python app.py
+Options:
+1. View all records
+2. View specific record
+3. Add record
+4. Delete record
+5. Update record
+Q. Quit
+Enter an option: 1
+{'_id': ObjectId('64368cf4da9a26534d27f6a9'), 'name': 'John Doe', 'phone': '555-1234', 'email': 'johndoe@example.com', 'address': '123 Main St, Anytown, USA'}
+{'_id': ObjectId('64368d30da9a26534d27f6ab'), 'name': 'Jane Smith', 'phone': '555-5678', 'email': 'janesmith@example.com', 'address': '456 Elm St, Anytown, USA'}
+{'_id': ObjectId('64368d44da9a26534d27f6ac'), 'name': 'Bob Johnson', 'phone': '555-9012', 'email': 'bobjohnson@example.com', 'address': '789 Oak St, Anytown, USA'}
+{'_id': ObjectId('64368d90da9a26534d27f6ad'), 'name': 'Melih Teke', 'phone': '6666-94134', 'email': 'melihteke@melihteke.com', 'address': 'Somewhere, Turkiye'}
+{'_id': ObjectId('643697ad44336b29c882e31e'), 'name': 'Utku Haydaroglu', 'phone': '6666-94134', 'email': 'utku@gmail.com', 'address': 'there, Turkiye'}
+Options:
+1. View all records
+2. View specific record
+3. Add record
+4. Delete record
+5. Update record
+Q. Quit
+Enter an option: 2
+Enter name of record to view: Melih Teke
+{'_id': ObjectId('64368d90da9a26534d27f6ad'), 'name': 'Melih Teke', 'phone': '6666-94134', 'email': 'melihteke@melihteke.com', 'address': 'Somewhere, Turkiye'}
+Options:
+1. View all records
+2. View specific record
+3. Add record
+4. Delete record
+5. Update record
+Q. Quit
+Enter an option: Q
+Exiting program...
+(.venv) MTeke1@APKM2W42362BA4 phonebook % 
+```

@@ -28,29 +28,64 @@ class Phonebook:
     def view_specific_record(self, filters):
         return [record for record in self.collection.find(filters)]
 
-# Example usage:
 phonebook = Phonebook(
     uri="mongodb+srv://{DBA_USR}:{DBA_PSSWD}@{DBA_URL}",
     db_name="test",
     collection_name="phonebook"
 )
 
-# Adding a new record
-new_record = {'name': 'John Smith', 'phone_number': '555-1234'}
-phonebook.add_record(new_record)
+while True:
+    print("Options:")
+    print("1. View all records")
+    print("2. View specific record")
+    print("3. Add record")
+    print("4. Delete record")
+    print("5. Update record")
+    print("Q. Quit")
+    choice = input("Enter an option: ").upper()
 
-# Updating an existing record
-record_id_to_update = 'some_id'
-updates = {'name': 'Jane Doe', 'phone_number': '555-5678'}
-phonebook.update_record(record_id_to_update, updates)
+    if choice == "1":
+        records = phonebook.view_all_records()
+        for record in records:
+            print(record)
 
-# Removing a record
-record_id_to_remove = 'some_id'
-phonebook.remove_record(record_id_to_remove)
+    elif choice == "2":
+        name = input("Enter name of record to view: ")
+        filters = {"name": name}
+        records = phonebook.view_specific_record(filters)
+        for record in records:
+            print(record)
 
-# Viewing all records
-all_records = phonebook.view_all_records()
+    elif choice == "3":
+        name = input("Enter name: ")
+        phone = input("Enter phone number: ")
+        record = {"name": name, "phone": phone}
+        phonebook.add_record(record)
+        print("Record added successfully!")
 
-# Viewing specific records
-filters = {'name': 'John Smith'}
-specific_records = phonebook.view_specific_record(filters)
+    elif choice == "4":
+        record_id = input("Enter ID of record to delete: ")
+        phonebook.remove_record(record_id)
+        print("Record deleted successfully!")
+
+    elif choice == "5":
+        record_id = input("Enter ID of record to update: ")
+        name = input("Enter new name (leave blank to keep current name): ")
+        phone = input("Enter new phone number (leave blank to keep current phone number): ")
+        updates = {}
+        if name:
+            updates["name"] = name
+        if phone:
+            updates["phone"] = phone
+        phonebook.update_record(record_id, updates)
+        print("Record updated successfully!")
+
+    elif choice == "Q":
+        print("Exiting program...")
+        break
+
+    else:
+        print("Invalid option. Please try again.")
+
+
+

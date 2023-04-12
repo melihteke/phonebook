@@ -1,6 +1,3 @@
-
-<img width="405" alt="image" src="https://user-images.githubusercontent.com/36086368/231461603-0e5936a7-0c52-4894-bf62-c358bd761906.png">
-
 ## Creating a Phonebook with MongoDB
 
 Welcome to the phonebook application readme! This application is designed to showcase how you can easily build your own phonebook using MongoDB with Python. The purpose of this document is to guide you through the setup process so that you can quickly get started with using the application.

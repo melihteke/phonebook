@@ -1,15 +1,18 @@
 ## Creating a Phonebook with MongoDB
 
-Welcome to the phonebook application readme! This application is designed to showcase how you can easily build your own phonebook using MongoDB with Python. The purpose of this document is to guide you through the setup process so that you can quickly get started with using the application.
+Welcome to the phonebook application readme! This application is designed to showcase how easy it is to build a phonebook using MongoDB and Python. Although phonebooks are common, the purpose of this application is to demonstrate how NoSQL databases like MongoDB can be used in different fields, such as network automation as well.
 
-Before we begin, please ensure that you have access to a MongoDB instance. In this example, I have used the FreeTier option available on https://cloud.mongodb.com/. However, you can use any MongoDB instance that is accessible to you.
+As a network engineer, you may need to store various types of data such as device names, site information, IP addresses, device statuses, contact information, and subnets. Instead of using traditional relational databases, NoSQL databases like MongoDB can provide greater flexibility and scalability in managing and organizing this data.
 
-To get started, follow these steps:
+To get started with the phonebook application, please ensure that you have access to a MongoDB instance. In this example, we have used the FreeTier option available on https://cloud.mongodb.com/. However, you can use any MongoDB instance that is accessible to you.
 
-Clone the repository to your local machine
-Install the required dependencies by running pip install -r requirements.txt
-Set up a .env file with the necessary environment variables for connecting to your MongoDB instance (e.g. DBA_USR, DBA_PSSWD, DBA_URL)
-Start the application by running python app.py
+Here are the steps to set up and run the application:
+
+Clone the repository to your local machine.
+Install the required dependencies by running pip install -r requirements.txt.
+Set up a .env file with the necessary environment variables for connecting to your MongoDB instance (e.g. DBA_URI).
+Start the application by running python app.py.
+By following these steps, you can quickly set up and use the phonebook application to explore the features and benefits of using MongoDB as your NoSQL database.
 
 
 ## How to Run the app

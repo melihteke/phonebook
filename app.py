@@ -1,6 +1,11 @@
 from pymongo import MongoClient
 from bson.objectid import ObjectId
+import environment
 
+
+DBA_USR = environment.DBA_USR
+DBA_PSSWD = environment.DBA_PSSWD
+DBA_URL = environment.DBA_URL
 
 class Phonebook:
     def __init__(self, uri, db_name, collection_name):
@@ -25,7 +30,7 @@ class Phonebook:
 
 # Example usage:
 phonebook = Phonebook(
-    uri="mongodb+srv://dbausr_melih:XXXXXXXXXX@cluster0.yblsda7fog.mongodb.net/test?retryWrites=true&w=majority",
+    uri="mongodb+srv://{DBA_USR}:{DBA_PSSWD}@{DBA_URL}",
     db_name="test",
     collection_name="phonebook"
 )
